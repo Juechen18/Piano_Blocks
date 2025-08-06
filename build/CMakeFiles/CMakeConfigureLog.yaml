@@ -1,0 +1,564 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      The target system is: Linux -  - arm
+      The host system is: Linux - 5.4.0-150-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/local/arm/6.5.0/bin/arm-linux-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/4.0.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/local/arm/6.5.0/bin/arm-linux-g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/4.0.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/CMakeScratch/TryCompile-ne30pC"
+      binary: "/mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/CMakeScratch/TryCompile-ne30pC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/CMakeScratch/TryCompile-ne30pC'
+        
+        Run Build Command(s): /snap/cmake/1468/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e6426/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_e6426.dir/build.make CMakeFiles/cmTC_e6426.dir/build
+        make[1]: Entering directory '/mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/CMakeScratch/TryCompile-ne30pC'
+        Building C object CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o
+        /usr/local/arm/6.5.0/bin/arm-linux-gcc   -v -o CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o -c /snap/cmake/1468/share/cmake-4.0/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/local/arm/6.5.0/bin/arm-linux-gcc
+        Target: arm-linux-gnueabi
+        Configured with: '/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/gcc.git~linaro-6.5-2018.12/configure' SHELL=/bin/bash --with-mpc=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-mpfr=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gmp=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-lto --enable-shared --without-included-gettext --enable-nls --with-system-zlib --disable-sjlj-exceptions --enable-gnu-unique-object --enable-linker-build-id --disable-libstdcxx-pch --enable-c99 --enable-clocale=gnu --enable-libstdcxx-debug --enable-long-long --with-cloog=no --with-ppl=no --with-isl=no --disable-multilib --with-float=soft --with-mode=thumb --with-tune=cortex-a9 --with-arch=armv7-a --enable-threads=posix --enable-multiarch --enable-libstdcxx-time=yes --enable-gnu-indirect-function --with-build-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/sysroots/arm-linux-gnueabi --with-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu/arm-linux-gnueabi/libc --enable-checking=release --disable-bootstrap --enable-languages=c,c++,fortran,lto --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=arm-linux-gnueabi --prefix=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu
+        Thread model: posix
+        gcc version 6.5.0 (Linaro GCC 6.5-2018.12) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu'
+         /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/cc1 -quiet -v -imultilib . -imultiarch arm-linux-gnueabi -iprefix /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/ -isysroot /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc /snap/cmake/1468/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=armv7-a -mtune=cortex-a9 -mfloat-abi=soft -mthumb -mtls-dialect=gnu -auxbase-strip CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccLlB53F.s
+        GNU C11 (Linaro GCC 6.5-2018.12) version 6.5.0 (arm-linux-gnueabi)
+        	compiled by GNU C version 4.8.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/include"
+        ignoring nonexistent directory "/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/local/include/arm-linux-gnueabi"
+        ignoring nonexistent directory "/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/local/include"
+        ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed"
+        ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include"
+        ignoring nonexistent directory "/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/include/arm-linux-gnueabi"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include
+         /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed
+         /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include
+         /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/include
+        End of search list.
+        GNU C11 (Linaro GCC 6.5-2018.12) version 6.5.0 (arm-linux-gnueabi)
+        	compiled by GNU C version 4.8.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 6bbbebf39f23ef1db0987bf381ea2184
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu'
+         /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/as -v -march=armv7-a -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o /tmp/ccLlB53F.s
+        GNU assembler version 2.27.0 (arm-linux-gnueabi) using BFD version (Linaro_Binutils-2018.12) 2.27.0.20161229
+        COMPILER_PATH=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../libexec/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/
+        LIBRARY_PATH=/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../lib/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu'
+        Linking C executable cmTC_e6426
+        /snap/cmake/1468/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6426.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/local/arm/6.5.0/bin/arm-linux-gcc
+        COLLECT_LTO_WRAPPER=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/lto-wrapper
+        Target: arm-linux-gnueabi
+        Configured with: '/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/gcc.git~linaro-6.5-2018.12/configure' SHELL=/bin/bash --with-mpc=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-mpfr=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gmp=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-lto --enable-shared --without-included-gettext --enable-nls --with-system-zlib --disable-sjlj-exceptions --enable-gnu-unique-object --enable-linker-build-id --disable-libstdcxx-pch --enable-c99 --enable-clocale=gnu --enable-libstdcxx-debug --enable-long-long --with-cloog=no --with-ppl=no --with-isl=no --disable-multilib --with-float=soft --with-mode=thumb --with-tune=cortex-a9 --with-arch=armv7-a --enable-threads=posix --enable-multiarch --enable-libstdcxx-time=yes --enable-gnu-indirect-function --with-build-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/sysroots/arm-linux-gnueabi --with-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu/arm-linux-gnueabi/libc --enable-checking=release --disable-bootstrap --enable-languages=c,c++,fortran,lto --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=arm-linux-gnueabi --prefix=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu
+        Thread model: posix
+        gcc version 6.5.0 (Linaro GCC 6.5-2018.12) 
+        COMPILER_PATH=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../libexec/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/
+        LIBRARY_PATH=/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../lib/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e6426' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu'
+         /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/collect2 -plugin /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/liblto_plugin.so -plugin-opt=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnV4h0D.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_e6426 /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crt1.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crti.o /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0 -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi -L/usr/local/arm/6.5.0/bin/../lib/gcc -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib -v CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crtn.o
+        collect2 version 6.5.0
+        /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/ld -plugin /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/liblto_plugin.so -plugin-opt=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnV4h0D.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_e6426 /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crt1.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crti.o /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0 -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi -L/usr/local/arm/6.5.0/bin/../lib/gcc -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib -v CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crtn.o
+        GNU ld (Linaro_Binutils-2018.12) 2.27.0.20161229
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e6426' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu'
+        /usr/local/arm/6.5.0/bin/arm-linux-gcc  -v -Wl,-v CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o -o cmTC_e6426
+        make[1]: Leaving directory '/mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/CMakeScratch/TryCompile-ne30pC'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include]
+          add: [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed]
+          add: [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include]
+          add: [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/include]
+        end of search list found
+        collapse include dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include] ==> [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/include]
+        collapse include dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed] ==> [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed]
+        collapse include dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/include]
+        collapse include dir [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/include] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/include]
+        implicit include dirs: [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/include;/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed;/usr/local/arm/6.5.0/arm-linux-gnueabi/include;/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/CMakeScratch/TryCompile-ne30pC']
+        ignore line: []
+        ignore line: [Run Build Command(s): /snap/cmake/1468/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e6426/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_e6426.dir/build.make CMakeFiles/cmTC_e6426.dir/build]
+        ignore line: [make[1]: Entering directory '/mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/CMakeScratch/TryCompile-ne30pC']
+        ignore line: [Building C object CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/local/arm/6.5.0/bin/arm-linux-gcc   -v -o CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o -c /snap/cmake/1468/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/local/arm/6.5.0/bin/arm-linux-gcc]
+        ignore line: [Target: arm-linux-gnueabi]
+        ignore line: [Configured with: '/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/gcc.git~linaro-6.5-2018.12/configure' SHELL=/bin/bash --with-mpc=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-mpfr=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gmp=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-lto --enable-shared --without-included-gettext --enable-nls --with-system-zlib --disable-sjlj-exceptions --enable-gnu-unique-object --enable-linker-build-id --disable-libstdcxx-pch --enable-c99 --enable-clocale=gnu --enable-libstdcxx-debug --enable-long-long --with-cloog=no --with-ppl=no --with-isl=no --disable-multilib --with-float=soft --with-mode=thumb --with-tune=cortex-a9 --with-arch=armv7-a --enable-threads=posix --enable-multiarch --enable-libstdcxx-time=yes --enable-gnu-indirect-function --with-build-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/sysroots/arm-linux-gnueabi --with-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu/arm-linux-gnueabi/libc --enable-checking=release --disable-bootstrap --enable-languages=c,c++,fortran,lto --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=arm-linux-gnueabi --prefix=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 6.5.0 (Linaro GCC 6.5-2018.12) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu']
+        ignore line: [ /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/cc1 -quiet -v -imultilib . -imultiarch arm-linux-gnueabi -iprefix /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/ -isysroot /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc /snap/cmake/1468/share/cmake-4.0/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=armv7-a -mtune=cortex-a9 -mfloat-abi=soft -mthumb -mtls-dialect=gnu -auxbase-strip CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccLlB53F.s]
+        ignore line: [GNU C11 (Linaro GCC 6.5-2018.12) version 6.5.0 (arm-linux-gnueabi)]
+        ignore line: [	compiled by GNU C version 4.8.4  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/include"]
+        ignore line: [ignoring nonexistent directory "/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/local/include/arm-linux-gnueabi"]
+        ignore line: [ignoring nonexistent directory "/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include"]
+        ignore line: [ignoring nonexistent directory "/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/include/arm-linux-gnueabi"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include]
+        ignore line: [ /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed]
+        ignore line: [ /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include]
+        ignore line: [ /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C11 (Linaro GCC 6.5-2018.12) version 6.5.0 (arm-linux-gnueabi)]
+        ignore line: [	compiled by GNU C version 4.8.4  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 6bbbebf39f23ef1db0987bf381ea2184]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu']
+        ignore line: [ /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/as -v -march=armv7-a -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o /tmp/ccLlB53F.s]
+        ignore line: [GNU assembler version 2.27.0 (arm-linux-gnueabi) using BFD version (Linaro_Binutils-2018.12) 2.27.0.20161229]
+        ignore line: [COMPILER_PATH=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../libexec/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/]
+        ignore line: [LIBRARY_PATH=/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../lib/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu']
+        ignore line: [Linking C executable cmTC_e6426]
+        ignore line: [/snap/cmake/1468/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6426.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/local/arm/6.5.0/bin/arm-linux-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/lto-wrapper]
+        ignore line: [Target: arm-linux-gnueabi]
+        ignore line: [Configured with: '/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/gcc.git~linaro-6.5-2018.12/configure' SHELL=/bin/bash --with-mpc=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-mpfr=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gmp=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-lto --enable-shared --without-included-gettext --enable-nls --with-system-zlib --disable-sjlj-exceptions --enable-gnu-unique-object --enable-linker-build-id --disable-libstdcxx-pch --enable-c99 --enable-clocale=gnu --enable-libstdcxx-debug --enable-long-long --with-cloog=no --with-ppl=no --with-isl=no --disable-multilib --with-float=soft --with-mode=thumb --with-tune=cortex-a9 --with-arch=armv7-a --enable-threads=posix --enable-multiarch --enable-libstdcxx-time=yes --enable-gnu-indirect-function --with-build-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/sysroots/arm-linux-gnueabi --with-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu/arm-linux-gnueabi/libc --enable-checking=release --disable-bootstrap --enable-languages=c,c++,fortran,lto --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=arm-linux-gnueabi --prefix=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 6.5.0 (Linaro GCC 6.5-2018.12) ]
+        ignore line: [COMPILER_PATH=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../libexec/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/]
+        ignore line: [LIBRARY_PATH=/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../lib/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e6426' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu']
+        link line: [ /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/collect2 -plugin /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/liblto_plugin.so -plugin-opt=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnV4h0D.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_e6426 /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crt1.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crti.o /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0 -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi -L/usr/local/arm/6.5.0/bin/../lib/gcc -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib -v CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crtn.o]
+          arg [/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccnV4h0D.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux.so.3] ==> ignore
+          arg [-X] ==> ignore
+          arg [-m] ==> ignore
+          arg [armelf_linux_eabi] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e6426] ==> ignore
+          arg [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crt1.o] ==> obj [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crt1.o]
+          arg [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crti.o] ==> obj [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crti.o]
+          arg [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o] ==> obj [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o]
+          arg [-L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0] ==> dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0]
+          arg [-L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi] ==> dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi]
+          arg [-L/usr/local/arm/6.5.0/bin/../lib/gcc] ==> dir [/usr/local/arm/6.5.0/bin/../lib/gcc]
+          arg [-L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib] ==> dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib]
+          arg [-L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib] ==> dir [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib]
+          arg [-L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib] ==> dir [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o] ==> obj [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o]
+          arg [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crtn.o] ==> obj [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crtn.o]
+        ignore line: [collect2 version 6.5.0]
+        ignore line: [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/ld -plugin /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/liblto_plugin.so -plugin-opt=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnV4h0D.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_e6426 /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crt1.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crti.o /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0 -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi -L/usr/local/arm/6.5.0/bin/../lib/gcc -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib -v CMakeFiles/cmTC_e6426.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crtn.o]
+        linker tool for 'C': /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/ld
+        collapse obj [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crt1.o] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib/crt1.o]
+        collapse obj [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crti.o] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib/crti.o]
+        collapse obj [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o] ==> [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o]
+        collapse obj [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o] ==> [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o]
+        collapse obj [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crtn.o] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib/crtn.o]
+        collapse library dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0] ==> [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0]
+        collapse library dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi] ==> [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi]
+        collapse library dir [/usr/local/arm/6.5.0/bin/../lib/gcc] ==> [/usr/local/arm/6.5.0/lib/gcc]
+        collapse library dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/lib]
+        collapse library dir [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/lib]
+        collapse library dir [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib/crt1.o;/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib/crti.o;/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o;/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o;/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib/crtn.o]
+        implicit dirs: [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0;/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi;/usr/local/arm/6.5.0/lib/gcc;/usr/local/arm/6.5.0/arm-linux-gnueabi/lib;/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/lib;/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/ld" "-v"
+      GNU ld (Linaro_Binutils-2018.12) 2.27.0.20161229
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/CMakeScratch/TryCompile-67UzDF"
+      binary: "/mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/CMakeScratch/TryCompile-67UzDF"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/CMakeScratch/TryCompile-67UzDF'
+        
+        Run Build Command(s): /snap/cmake/1468/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d6252/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_d6252.dir/build.make CMakeFiles/cmTC_d6252.dir/build
+        make[1]: Entering directory '/mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/CMakeScratch/TryCompile-67UzDF'
+        Building CXX object CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/local/arm/6.5.0/bin/arm-linux-g++   -v -o CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o -c /snap/cmake/1468/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/local/arm/6.5.0/bin/arm-linux-g++
+        Target: arm-linux-gnueabi
+        Configured with: '/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/gcc.git~linaro-6.5-2018.12/configure' SHELL=/bin/bash --with-mpc=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-mpfr=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gmp=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-lto --enable-shared --without-included-gettext --enable-nls --with-system-zlib --disable-sjlj-exceptions --enable-gnu-unique-object --enable-linker-build-id --disable-libstdcxx-pch --enable-c99 --enable-clocale=gnu --enable-libstdcxx-debug --enable-long-long --with-cloog=no --with-ppl=no --with-isl=no --disable-multilib --with-float=soft --with-mode=thumb --with-tune=cortex-a9 --with-arch=armv7-a --enable-threads=posix --enable-multiarch --enable-libstdcxx-time=yes --enable-gnu-indirect-function --with-build-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/sysroots/arm-linux-gnueabi --with-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu/arm-linux-gnueabi/libc --enable-checking=release --disable-bootstrap --enable-languages=c,c++,fortran,lto --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=arm-linux-gnueabi --prefix=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu
+        Thread model: posix
+        gcc version 6.5.0 (Linaro GCC 6.5-2018.12) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu'
+         /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/cc1plus -quiet -v -imultilib . -imultiarch arm-linux-gnueabi -iprefix /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/ -isysroot /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc -D_GNU_SOURCE /snap/cmake/1468/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=armv7-a -mtune=cortex-a9 -mfloat-abi=soft -mthumb -mtls-dialect=gnu -auxbase-strip CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccsbhWVW.s
+        GNU C++14 (Linaro GCC 6.5-2018.12) version 6.5.0 (arm-linux-gnueabi)
+        	compiled by GNU C version 4.8.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0"
+        ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0/arm-linux-gnueabi/."
+        ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0/backward"
+        ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/include"
+        ignoring nonexistent directory "/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/local/include/arm-linux-gnueabi"
+        ignoring nonexistent directory "/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/local/include"
+        ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed"
+        ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include"
+        ignoring nonexistent directory "/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/include/arm-linux-gnueabi"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0
+         /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0/arm-linux-gnueabi/.
+         /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0/backward
+         /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include
+         /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed
+         /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include
+         /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/include
+        End of search list.
+        GNU C++14 (Linaro GCC 6.5-2018.12) version 6.5.0 (arm-linux-gnueabi)
+        	compiled by GNU C version 4.8.4, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 0130380927f8dcf8851c8be06679d444
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu'
+         /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/as -v -march=armv7-a -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccsbhWVW.s
+        GNU assembler version 2.27.0 (arm-linux-gnueabi) using BFD version (Linaro_Binutils-2018.12) 2.27.0.20161229
+        COMPILER_PATH=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../libexec/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/
+        LIBRARY_PATH=/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../lib/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu'
+        Linking CXX executable cmTC_d6252
+        /snap/cmake/1468/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6252.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/local/arm/6.5.0/bin/arm-linux-g++
+        COLLECT_LTO_WRAPPER=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/lto-wrapper
+        Target: arm-linux-gnueabi
+        Configured with: '/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/gcc.git~linaro-6.5-2018.12/configure' SHELL=/bin/bash --with-mpc=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-mpfr=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gmp=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-lto --enable-shared --without-included-gettext --enable-nls --with-system-zlib --disable-sjlj-exceptions --enable-gnu-unique-object --enable-linker-build-id --disable-libstdcxx-pch --enable-c99 --enable-clocale=gnu --enable-libstdcxx-debug --enable-long-long --with-cloog=no --with-ppl=no --with-isl=no --disable-multilib --with-float=soft --with-mode=thumb --with-tune=cortex-a9 --with-arch=armv7-a --enable-threads=posix --enable-multiarch --enable-libstdcxx-time=yes --enable-gnu-indirect-function --with-build-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/sysroots/arm-linux-gnueabi --with-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu/arm-linux-gnueabi/libc --enable-checking=release --disable-bootstrap --enable-languages=c,c++,fortran,lto --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=arm-linux-gnueabi --prefix=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu
+        Thread model: posix
+        gcc version 6.5.0 (Linaro GCC 6.5-2018.12) 
+        COMPILER_PATH=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../libexec/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/
+        LIBRARY_PATH=/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../lib/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d6252' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu'
+         /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/collect2 -plugin /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/liblto_plugin.so -plugin-opt=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6mHJHO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_d6252 /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crt1.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crti.o /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0 -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi -L/usr/local/arm/6.5.0/bin/../lib/gcc -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib -v CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crtn.o
+        collect2 version 6.5.0
+        /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/ld -plugin /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/liblto_plugin.so -plugin-opt=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6mHJHO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_d6252 /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crt1.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crti.o /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0 -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi -L/usr/local/arm/6.5.0/bin/../lib/gcc -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib -v CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crtn.o
+        GNU ld (Linaro_Binutils-2018.12) 2.27.0.20161229
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d6252' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu'
+        /usr/local/arm/6.5.0/bin/arm-linux-g++  -v -Wl,-v CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d6252
+        make[1]: Leaving directory '/mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/CMakeScratch/TryCompile-67UzDF'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0]
+          add: [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0/arm-linux-gnueabi/.]
+          add: [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0/backward]
+          add: [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include]
+          add: [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed]
+          add: [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include]
+          add: [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/include]
+        end of search list found
+        collapse include dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/include/c++/6.5.0]
+        collapse include dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0/arm-linux-gnueabi/.] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/include/c++/6.5.0/arm-linux-gnueabi]
+        collapse include dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0/backward] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/include/c++/6.5.0/backward]
+        collapse include dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include] ==> [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/include]
+        collapse include dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed] ==> [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed]
+        collapse include dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/include]
+        collapse include dir [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/include] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/include]
+        implicit include dirs: [/usr/local/arm/6.5.0/arm-linux-gnueabi/include/c++/6.5.0;/usr/local/arm/6.5.0/arm-linux-gnueabi/include/c++/6.5.0/arm-linux-gnueabi;/usr/local/arm/6.5.0/arm-linux-gnueabi/include/c++/6.5.0/backward;/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/include;/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed;/usr/local/arm/6.5.0/arm-linux-gnueabi/include;/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/CMakeScratch/TryCompile-67UzDF']
+        ignore line: []
+        ignore line: [Run Build Command(s): /snap/cmake/1468/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d6252/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_d6252.dir/build.make CMakeFiles/cmTC_d6252.dir/build]
+        ignore line: [make[1]: Entering directory '/mnt/hgfs/share/Piano_Blocks/build/CMakeFiles/CMakeScratch/TryCompile-67UzDF']
+        ignore line: [Building CXX object CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/local/arm/6.5.0/bin/arm-linux-g++   -v -o CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o -c /snap/cmake/1468/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/local/arm/6.5.0/bin/arm-linux-g++]
+        ignore line: [Target: arm-linux-gnueabi]
+        ignore line: [Configured with: '/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/gcc.git~linaro-6.5-2018.12/configure' SHELL=/bin/bash --with-mpc=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-mpfr=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gmp=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-lto --enable-shared --without-included-gettext --enable-nls --with-system-zlib --disable-sjlj-exceptions --enable-gnu-unique-object --enable-linker-build-id --disable-libstdcxx-pch --enable-c99 --enable-clocale=gnu --enable-libstdcxx-debug --enable-long-long --with-cloog=no --with-ppl=no --with-isl=no --disable-multilib --with-float=soft --with-mode=thumb --with-tune=cortex-a9 --with-arch=armv7-a --enable-threads=posix --enable-multiarch --enable-libstdcxx-time=yes --enable-gnu-indirect-function --with-build-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/sysroots/arm-linux-gnueabi --with-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu/arm-linux-gnueabi/libc --enable-checking=release --disable-bootstrap --enable-languages=c,c++,fortran,lto --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=arm-linux-gnueabi --prefix=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 6.5.0 (Linaro GCC 6.5-2018.12) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu']
+        ignore line: [ /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/cc1plus -quiet -v -imultilib . -imultiarch arm-linux-gnueabi -iprefix /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/ -isysroot /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc -D_GNU_SOURCE /snap/cmake/1468/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=armv7-a -mtune=cortex-a9 -mfloat-abi=soft -mthumb -mtls-dialect=gnu -auxbase-strip CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccsbhWVW.s]
+        ignore line: [GNU C++14 (Linaro GCC 6.5-2018.12) version 6.5.0 (arm-linux-gnueabi)]
+        ignore line: [	compiled by GNU C version 4.8.4  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0"]
+        ignore line: [ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0/arm-linux-gnueabi/."]
+        ignore line: [ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0/backward"]
+        ignore line: [ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/include"]
+        ignore line: [ignoring nonexistent directory "/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/local/include/arm-linux-gnueabi"]
+        ignore line: [ignoring nonexistent directory "/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/usr/local/arm/6.5.0/bin/../lib/gcc/../../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include"]
+        ignore line: [ignoring nonexistent directory "/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/include/arm-linux-gnueabi"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0]
+        ignore line: [ /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0/arm-linux-gnueabi/.]
+        ignore line: [ /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include/c++/6.5.0/backward]
+        ignore line: [ /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include]
+        ignore line: [ /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/include-fixed]
+        ignore line: [ /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/include]
+        ignore line: [ /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Linaro GCC 6.5-2018.12) version 6.5.0 (arm-linux-gnueabi)]
+        ignore line: [	compiled by GNU C version 4.8.4  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 0130380927f8dcf8851c8be06679d444]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu']
+        ignore line: [ /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/as -v -march=armv7-a -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccsbhWVW.s]
+        ignore line: [GNU assembler version 2.27.0 (arm-linux-gnueabi) using BFD version (Linaro_Binutils-2018.12) 2.27.0.20161229]
+        ignore line: [COMPILER_PATH=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../libexec/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/]
+        ignore line: [LIBRARY_PATH=/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../lib/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu']
+        ignore line: [Linking CXX executable cmTC_d6252]
+        ignore line: [/snap/cmake/1468/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6252.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/local/arm/6.5.0/bin/arm-linux-g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/lto-wrapper]
+        ignore line: [Target: arm-linux-gnueabi]
+        ignore line: [Configured with: '/home/tcwg-buildslave/workspace/tcwg-make-release_1/snapshots/gcc.git~linaro-6.5-2018.12/configure' SHELL=/bin/bash --with-mpc=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-mpfr=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gmp=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu --with-gnu-as --with-gnu-ld --disable-libmudflap --enable-lto --enable-shared --without-included-gettext --enable-nls --with-system-zlib --disable-sjlj-exceptions --enable-gnu-unique-object --enable-linker-build-id --disable-libstdcxx-pch --enable-c99 --enable-clocale=gnu --enable-libstdcxx-debug --enable-long-long --with-cloog=no --with-ppl=no --with-isl=no --disable-multilib --with-float=soft --with-mode=thumb --with-tune=cortex-a9 --with-arch=armv7-a --enable-threads=posix --enable-multiarch --enable-libstdcxx-time=yes --enable-gnu-indirect-function --with-build-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/sysroots/arm-linux-gnueabi --with-sysroot=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu/arm-linux-gnueabi/libc --enable-checking=release --disable-bootstrap --enable-languages=c,c++,fortran,lto --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=arm-linux-gnueabi --prefix=/home/tcwg-buildslave/workspace/tcwg-make-release_1/_build/builds/destdir/x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 6.5.0 (Linaro GCC 6.5-2018.12) ]
+        ignore line: [COMPILER_PATH=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../libexec/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/]
+        ignore line: [LIBRARY_PATH=/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/:/usr/local/arm/6.5.0/bin/../lib/gcc/:/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib/:/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d6252' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=soft' '-mthumb' '-mtls-dialect=gnu']
+        link line: [ /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/collect2 -plugin /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/liblto_plugin.so -plugin-opt=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6mHJHO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_d6252 /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crt1.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crti.o /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0 -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi -L/usr/local/arm/6.5.0/bin/../lib/gcc -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib -v CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crtn.o]
+          arg [/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc6mHJHO.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux.so.3] ==> ignore
+          arg [-X] ==> ignore
+          arg [-m] ==> ignore
+          arg [armelf_linux_eabi] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_d6252] ==> ignore
+          arg [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crt1.o] ==> obj [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crt1.o]
+          arg [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crti.o] ==> obj [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crti.o]
+          arg [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o] ==> obj [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o]
+          arg [-L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0] ==> dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0]
+          arg [-L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi] ==> dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi]
+          arg [-L/usr/local/arm/6.5.0/bin/../lib/gcc] ==> dir [/usr/local/arm/6.5.0/bin/../lib/gcc]
+          arg [-L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib] ==> dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib]
+          arg [-L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib] ==> dir [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib]
+          arg [-L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib] ==> dir [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o] ==> obj [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o]
+          arg [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crtn.o] ==> obj [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crtn.o]
+        ignore line: [collect2 version 6.5.0]
+        ignore line: [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/ld -plugin /usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/liblto_plugin.so -plugin-opt=/usr/local/arm/6.5.0/bin/../libexec/gcc/arm-linux-gnueabi/6.5.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6mHJHO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_d6252 /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crt1.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crti.o /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0 -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi -L/usr/local/arm/6.5.0/bin/../lib/gcc -L/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib -L/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib -v CMakeFiles/cmTC_d6252.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o /usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crtn.o]
+        linker tool for 'CXX': /usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/ld
+        collapse obj [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crt1.o] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib/crt1.o]
+        collapse obj [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crti.o] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib/crti.o]
+        collapse obj [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o] ==> [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o]
+        collapse obj [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o] ==> [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o]
+        collapse obj [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib/crtn.o] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib/crtn.o]
+        collapse library dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0] ==> [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0]
+        collapse library dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi] ==> [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi]
+        collapse library dir [/usr/local/arm/6.5.0/bin/../lib/gcc] ==> [/usr/local/arm/6.5.0/lib/gcc]
+        collapse library dir [/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/lib] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/lib]
+        collapse library dir [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/lib] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/lib]
+        collapse library dir [/usr/local/arm/6.5.0/bin/../arm-linux-gnueabi/libc/usr/lib] ==> [/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib/crt1.o;/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib/crti.o;/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/crtbegin.o;/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0/crtend.o;/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib/crtn.o]
+        implicit dirs: [/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi/6.5.0;/usr/local/arm/6.5.0/lib/gcc/arm-linux-gnueabi;/usr/local/arm/6.5.0/lib/gcc;/usr/local/arm/6.5.0/arm-linux-gnueabi/lib;/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/lib;/usr/local/arm/6.5.0/arm-linux-gnueabi/libc/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/local/arm/6.5.0/bin/../lib/gcc/arm-linux-gnueabi/6.5.0/../../../../arm-linux-gnueabi/bin/ld" "-v"
+      GNU ld (Linaro_Binutils-2018.12) 2.27.0.20161229
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:1271 (message)"
+      - "/snap/cmake/1468/share/cmake-4.0/Modules/CMakeDetermineASMCompiler.cmake:139 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "lvgl/CMakeLists.txt:6 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-linux-gcc (Linaro GCC 6.5-2018.12) 6.5.0
+      Copyright (C) 2017 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+...
