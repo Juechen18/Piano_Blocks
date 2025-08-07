@@ -53,13 +53,15 @@ void ui_create_all()
     // 添加点击事件回调函数，点击时显示选择音乐界面
     lv_obj_add_event_cb(btn_music, show_select_screen, LV_EVENT_CLICKED, NULL);
 
-    // 3. 创建"待开发"按钮
+    // 3. 创建"退出程序"按钮
     lv_obj_t *btn_other = lv_button_create(menu_screen);     // 创建按钮
     lv_obj_set_size(btn_other, 200, 80);                     // 设置按钮尺寸200x80
     lv_obj_align(btn_other, LV_ALIGN_CENTER, 0, 50);         // 居中并向下偏移50像素
     lv_obj_t *label2 = lv_label_create(btn_other);           // 创建按钮标签
-    lv_label_set_text(label2, "待开发");                     // 设置标签文本
+    lv_label_set_text(label2, "退出程序");                   // 设置标签文本
     lv_obj_add_style(label2, &text_style, LV_STATE_DEFAULT); // 应用文本样式
+    // 添加点击事件回调函数，点击时退出程序
+    lv_obj_add_event_cb(btn_other, exit_program_cb, LV_EVENT_CLICKED, NULL);
 
     // ========== 音乐选择页面创建 ==========
     select_screen = lv_obj_create(lv_screen_active()); // 创建选择音乐屏幕
@@ -155,4 +157,43 @@ void show_result_screen(int score)
     lv_label_set_text_fmt(result_label, "游戏结束\n得分为%d", score);
     lv_obj_add_style(result_label, &text_style, LV_STATE_DEFAULT); // 应用文本样式
     lv_obj_remove_flag(result_screen, LV_OBJ_FLAG_HIDDEN);         // 显示结果界面
+}
+
+/**
+ * 退出程序的回调函数（处理"退出程序"按钮点击事件）
+ * @param event LVGL事件对象（包含触发事件的控件信息）
+ */
+void exit_program_cb(lv_event_t *event)
+{
+    // 1. 停止当前播放的音乐（避免程序退出后音乐继续）
+    stop_music();
+
+    // 2. 销毁所有LVGL UI资源（递归销毁根屏幕下的所有对象）
+    // LVGL中，销毁根屏幕对象（menu_screen/select_screen等）会自动销毁其所有子对象（按钮、标签、钢琴块等）
+    if (menu_screen != NULL)
+    {
+        lv_obj_delete(menu_screen); // 销毁主菜单屏幕（含子对象）
+        menu_screen = NULL;         // 置空避免野指针
+    }
+    if (select_screen != NULL)
+    {
+        lv_obj_delete(select_screen); // 销毁音乐选择屏幕
+        select_screen = NULL;
+    }
+    if (game_screen != NULL)
+    {
+        lv_obj_delete(game_screen); // 销毁游戏屏幕（含钢琴块）
+        game_screen = NULL;
+    }
+    if (result_screen != NULL)
+    {
+        lv_obj_delete(result_screen); // 销毁结果屏幕
+        result_screen = NULL;
+    }
+
+    // 3. 释放LVGL全局资源
+    lv_deinit(); // 关键：释放LVGL分配的内存、线程等资源
+
+    // 4. 彻底终止程序（0表示成功，非0表示错误）
+    exit(0);
 }
