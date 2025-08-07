@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/mnt/hgfs/share/Piano_Blocks/bin/main"
-  "/mnt/hgfs/share/Piano_Blocks/bin/main.pdb"
+  "/mnt/hgfs/share/GitHub/Piano_Blocks/bin/main"
+  "/mnt/hgfs/share/GitHub/Piano_Blocks/bin/main.pdb"
   "CMakeFiles/main.dir/main.c.o"
   "CMakeFiles/main.dir/main.c.o.d"
   "CMakeFiles/main.dir/mouse_cursor_icon.c.o"
