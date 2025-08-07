@@ -20,7 +20,7 @@ void play_music(const char *path)
         return;
     }
     char command[200];
-    snprintf(command, sizeof(command), "madplay -a -55 -r %s/music/%s &", ret, path);
+    snprintf(command, sizeof(command), "madplay -a -55 -r %s/assets/music/%s &", ret, path);
 
     // 执行命令
     int result = system(command);
